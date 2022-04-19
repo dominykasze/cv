@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Contacts</title>
+</head>
+<body>
+    <h3>Contacts</h3>
+    <ul>
+        <li>Email: yeet@yeet.com</li>
+    </ul>
+
+    <!-- Creating a form that takes user inputs -->
+    <form action="mailto:info@londonappbrewery.com" method="post"> <!-- <form> tag is used to create a form in HTML -->
+        <!-- "action" attribute inside the <form> tag specifies what the form should do once the user presses the "Submit"
+        button. In this case, it will open an email application and open a window for a new email to info@londonappbrewery.com -->
+        <label>Your Name:</label>  <!-- Creating a label using <label> tag -->
+        <input type="text" name="" value=""><br> <!-- Creating a text input field next to the label -->
+        <label>Your Email:</label>
+        <input type="email" name="yourEmail" value=""><br> <!-- Creating an input field for the user to enter their email -->
+        <label>Your Message:</label><br>
+        <textarea name="yourMessage" rows="10" cols="30"></textarea><br>  <!-- Creating a text area where the user can write their message -->
+<!--        <input type="checkbox"><br>  &lt;!&ndash; Adds a checbox field &ndash;&gt;-->
+        <input type="submit" name=""> <!-- Creating an input field that allows the user to submit their input (it works
+        as a button -->
+    </form>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!-- Below is a HTML file boilerplate (i. e. a code template that helps save time when creating HTML files
+by allowing to avoid rewriting reusable parts of the code each time you create a new file) -->
+<!-- To open a local HTML file in a browser, simply copy the full path of the file into your browser -->
+<!DOCTYPE html> <!-- This line tells the browser to render the website as an HTML 5 (the latest HTML version) website -->
+<html>
+
+    <head>  <!-- Contents of a tag are indented for better readability -->
+        <meta charset="utf-8">  <!-- charset=""utf-8 attribute inside the <meta> (metadata) tag tells the HTML file
+        to use utf-8 character set for all the text displayed in the website. Using utf-8 will almost always guarantee
+        that the website is rendered correctly by the browser -->
+        <title>Dominykas' Personal Site</title>  <!-- This is the title of the website that is displayed on the tab
+         in the browser -->
+    </head>
+
+    <body>
+        <!-- Adding an image using <img> tag. In this case, the image is fetched from the internet. alt attribute is used
+         to specify alternative text that will be displayed if the image cannot be loaded -->
+        <!-- <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/4919/production/_123331781_pig.jpg" alt="Dominykas picture"> -->
+        <!-- An alternative is to use an image that is stored locally (in this case, it's in the same project folder -->
+        <table cellspacing="20"> <!-- Creating a table where the first column of the first (and single) row will have
+        the picture inside it and the second column will have my name, job title and brief info. The cellspacing
+        attribute (which is deprecated, because CSS is used for styling) is used to add some space between table cells -->
+            <tr>
+                <td><img src="_123331781_pig-modified.png" alt="Dominykas picture"></td>
+                <td>
+                    <h1>
+                        <!-- Adding a hyperlink to the title that goes to my LinkedIn profile. This is done using the anchor (<a>) tag.
+                         The href attribute specifies the link and is followed by the text that should be displayed on the website -->
+                        <a href="https://www.linkedin.com/in/dominykas-zenkevicius-930537153/">Dominykas</a>
+                    </h1> <!-- Added my name to the website as a level 1 heading -->
+                    <p><em>Data Analyst at Nord Security.</em></p> <!-- <p> is a paragraph tag, while the <em> tag italicises text -->
+                    <p>There should be a brief bio here, but I don't know what to write.</p>
+                </td>
+            </tr>
+        </table>
+        <hr> <!-- Added a horizontal line using the horizontal rule tag -->
+        <h3>Education</h3>
+        <ul> <!-- <ul> tag is used to create unordered lists -->
+            <li>Economic Analysis, Master's Degree. Vilnius University.</li> <!-- Each list item is placed inside <li> tag -->
+            <li>Economics (Finance), Bachelor's Degreee. Vilnius University</li>
+        </ul>
+        <hr>
+        <h3>Work Experience</h3>
+        <table cellspacing="10"> <!-- <table> is a tag for creating a table -->
+            <thead> <!-- <thead> is a tag for the heading of a table -->
+                <tr>
+                    <th>Dates</th> <!-- <th> is a tag for table header cell. The header of the first column is "Dates" -->
+                    <th>Work</th> <!-- The header of the second column is "Work" -->
+                </tr>
+            </thead>
+            <tbody> <!-- <tbpdy> is a tag for table body -->
+                <tr> <!-- <tr> is a tag for creating a table row inside a table -->
+                    <td>2021-2022</td>  <!-- <td> is a tag for table data (i. e. a cell in a table) -->
+                    <td>Data Analyst at Nord Security</td>
+                </tr>
+                <tr>
+                    <td>2020-2021</td>  <!-- This is the first cell (column) in the second row of the table-->
+                    <td>Data Analyst at Ignitis</td> <!-- This is the second cell in the second row of the table -->
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3>Skills</h3>
+        <table border="1"> <!-- Creating a table where each column will have a separate table with skills (the structure
+        is quite complex, that's why CSS is used for styling instead of HTML) -->
+            <tr> <!-- First row of the table -->
+                <td>  <!-- Data inside the row cell (which, as can be seen below, is a table as well) -->
+                    <table cellspacing="10">
+                        <tr>
+                            <td>R</td>
+                            <td>⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>⭐⭐ </td>
+                        </tr>
+                    </table>
+                </td>  <!-- Closing the tag of the first cell (column) of the table -->
+                <td> <!-- A tag for the second column of the first row of the table - the data here is another table as well -->
+                    <table cellspacing="10">
+                        <tr>
+                            <td>SQL</td>
+                            <td>⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Excel</td>
+                            <td>⭐⭐⭐ </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <p></p>
+        <a href="hobbies.html">Hobbies</a>  <!-- Clicking on "Hobbies" in the browser will take the user
+        to hobbies.html page -->
+        <br>
+        <a href="contacts.html">Contact me</a> <!-- Clicking on "Contact me" in the browser will take the user
+        to contacts.html page -->
+        <br>
+    </body>
+
+</html>
+
+<!-- Day 42 Coding Exercise 1 solution: -->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>HTML Challenge</h1>
+        <hr>
+        <p><a href="https://developer.mozilla.org/en-US/">Link to MDN Documentation</a></p>
+        <table>
+            <tr>
+                <td>
+                    One
+                </td>
+                <td>
+                    Two
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Three
+                </td>
+                <td>
+                    Four
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
+-->
